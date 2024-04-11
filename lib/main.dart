@@ -39,7 +39,7 @@ class WelcomePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Text(
-              'Bienvenue à toi jeune professeur de Flutter.',
+              'La bienvenue à toi jeune professeur de Flutter.',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 22,

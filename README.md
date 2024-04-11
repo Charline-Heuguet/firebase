@@ -1,6 +1,6 @@
 # firebase
 
-A new Flutter project.
+Evaluation flutter avec firebase - Wireframes disponibles à la racine du projet.
 
 ## Getting Started
 
