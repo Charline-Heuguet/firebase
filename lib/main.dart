@@ -48,7 +48,7 @@ class WelcomePage extends StatelessWidget {
             ),
             SizedBox(height: 16),
             Text(
-              'Tu as eu des codes de connexion qui t\'ont été fournis par Charline.\n\nJe t\'invite à cliquer sur le lien suivant pour te connecter et te balader dans cette petite appli bien minimaliste et qui ne sert à absolument rien :)',
+              'Je t\'invite à cliquer sur le lien suivant pour te connecter et te balader dans cette petite appli bien minimaliste et qui ne sert à absolument rien :)',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 16),
             ),

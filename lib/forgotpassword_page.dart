@@ -23,7 +23,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
         SnackBar(content: Text('Lien de réinitialisation envoyé. Vérifie tes emails.')),
       );
     } on FirebaseAuthException catch (e) {
-      print(e); // Affiche l'erreur dans la console
+      print(e);
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('Erreur lors de l\'envoi du lien. Vérifie l\'email fourni.')),
       );

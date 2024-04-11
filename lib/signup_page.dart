@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'profile_page.dart'; // Assure-toi que ce chemin est correct et que la logique de redirection après l'inscription est ce que tu veux
+import 'profile_page.dart';
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({Key? key}) : super(key: key);
@@ -24,7 +24,6 @@ class _SignUpPageState extends State<SignUpPage> {
           password: _password.trim(),
         );
         if (userCredential.user != null) {
-          // Redirige l'utilisateur vers la page de profil ou toute autre page que tu préfères après l'inscription
           Navigator.of(context).pushReplacement(
             MaterialPageRoute(
               builder: (context) => ProfilePage(userEmail: _email),

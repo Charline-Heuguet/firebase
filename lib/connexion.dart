@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'profile_page.dart';
+import 'homepage.dart';
 import 'signup_page.dart';
 import 'forgotpassword_page.dart';
 
@@ -26,10 +26,7 @@ class _LoginPageState extends State<LoginPage> {
           password: _password.trim(),
         );
         if (userCredential.user != null) {
-          Navigator.of(context).pushReplacement(
-            MaterialPageRoute(
-              builder: (context) => ProfilePage(userEmail: _email),
-            ),
+          Navigator.of(context).push(MaterialPageRoute(builder: (context) => HomePage())
           );
         }
       } on FirebaseAuthException catch (e) {
